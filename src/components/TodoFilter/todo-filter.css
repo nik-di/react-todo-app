@@ -1,0 +1,13 @@
+.todo-filter {
+    margin-top: 10px;
+}
+
+.todo-filter-btn.active-btn:not(:focus) {
+    background-color: #007bff;
+    color: #f8f9fa;
+}
+
+.todo-filter-btn:focus {
+    background-color: #3396ff;
+    color: #f8f9fa;
+}

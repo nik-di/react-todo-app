@@ -1,0 +1,7 @@
+.form-control-sm {
+    width: calc(100% / 2);
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}

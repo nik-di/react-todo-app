@@ -1,0 +1,15 @@
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list-item.done {
+    text-decoration: line-through;
+}
+
+.todo-list-item button {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
