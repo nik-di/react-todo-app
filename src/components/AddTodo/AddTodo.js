@@ -1,9 +1,18 @@
 import React from 'react';
 import './add-todo.css';
 
-const AddTodo = () => {
-    return(
-        <input className="form-control-sm" placeholder="Add todo"></input>
+const AddTodo = ({ addTodoHandler }) => {
+    const addHandler = () => {
+        addTodoHandler('Some text')
+    };
+
+    return (
+        <div>
+            <input className="form-control-sm" placeholder="Add todo"></input>
+            <button className="btn btn-outline-secondary"
+                onClick={addHandler}
+            >Add item</button>
+        </div>
     );
 };
 

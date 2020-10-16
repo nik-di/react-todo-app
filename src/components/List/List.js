@@ -2,10 +2,15 @@ import React from 'react';
 import ListItem from '../ListItem/ListItem';
 import './list.css';
 
-const List = (props) => {
-    const elementsForRender = props.dataArr.map(({ id, ...oth }) => {
+const List = ({ dataArr, onRemoveTodo, markDone, markImportant }) => {
+    const elementsForRender = dataArr.map(({ id, ...oth }) => {
         return (
-            <ListItem key={id} {...oth} />
+            <ListItem onRemoveTodo={() => onRemoveTodo(id)}
+                onMarkTodo={() => markImportant(id)}
+                onTodoDone={() => markDone(id)}
+                key={id}
+                {...oth}
+            />
         );
     });
 
